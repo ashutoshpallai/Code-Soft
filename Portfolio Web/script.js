@@ -1,7 +1,12 @@
-const typed = new Typed('.multiple-text',{
-    strings:['Web Developer',' Competititive coder','Student'],
-typeSpeed: 100,
-backSpeed: 100,
-backDelay: 100,
-loop: true
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Feel free to reach out to me at:";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+        }
+    }
+    typeWriter();
 });
