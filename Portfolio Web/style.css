@@ -886,3 +886,70 @@ animation-delay:  1s;
     font-size: 16px;
     font-weight: 400;
 }
+.contactme {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contactme-main {
+    font-size: 2.5rem;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.email-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.email-link:hover {
+    transform: scale(1.1);
+    color: #ff5722;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icon {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 10px;
+    color: #333;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+    animation: float 2s infinite ease-in-out alternate;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: #ff5722;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
